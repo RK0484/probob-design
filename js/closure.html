@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var a ="react"; //globl
+
+        function xyz(){
+            var b= "java";//local
+            document.write(a+"<br>");//closure
+            document.write(b+"<br>");
+
+            function pqr(){
+                var c= "javascript";
+
+                document.write(c+"<br>");
+                document.write(a+"<br>"+b+"<br>"+c);
+            }
+            pqr();
+        }
+        xyz();
+    </script>
+    
+</body>
+</html>
